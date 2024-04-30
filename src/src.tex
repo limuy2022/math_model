@@ -1,8 +1,11 @@
 \documentclass[UTF8]{ctexart}
 
-
 \usepackage{titlesec}
 \usepackage{titletoc}
+\usepackage{graphicx}
+\usepackage{caption}
+
+\captionsetup[figure]{skip=0pt}
 
 \title{数模论文比赛}
 
@@ -10,34 +13,64 @@
 
 \begin {document}
 
-\maketitle
+  \maketitle
 
-\newpage
+  \newpage
 
-\tableofcontents
+  \tableofcontents
 
-\addcontentsline{tocloft}{section}{附录}
+  \addcontentsline{tocloft}{section}{附录}
 
-\newpage
+  \newpage
 
-\section{摘要}
+  \section{摘要}
 
-\section{问题重述}
+  \newpage
 
-\section{模型假设和符号说明}
+  \section{问题重述}
 
-\section{模型建立与求解}
+  \newpage
 
-\section{模型的优缺点与改进方法}
+  \section{模型假设和符号说明}
 
-\section{参考文献}
+  \begin{table}[h]
+    \centering
+    \caption{符号说明}
+    \begin{tabular}{p{6em}l}
+      \hline 
+      符号 & 说明 \\
+      \hline 
+      $x$ & 模型的自变量 \\
+      $y$ & 模型的因变量 \\
+      \hline
+    \end{tabular}
+  \end{table}
 
-\appendix
-\setcounter{secnumdepth}{-2} 
-\section{附录}
+  \newpage
 
-\setcounter{secnumdepth}{3} 
+  \section{模型建立与求解}
 
-\subsection{源代码}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.1]{rust.jpg}
+    \caption{test}
+  \end{figure}
+
+  \newpage
+
+  \section{模型的优缺点与改进方法}
+
+  \newpage
+
+  \section{参考文献}
+
+  \newpage
+
+  \appendix
+  \setcounter{secnumdepth}{-2} 
+  \section{附录}
+
+  \setcounter{secnumdepth}{3} 
+  \subsection{源代码}
 
 \end {document}
