@@ -5,7 +5,7 @@ def prepare(path):
     with open(path, 'r') as f:
         for i in range(21):
             f.readline()
-        with open("tmp.csv", "w") as ff:
+        with open("tmprr.csv", "w") as ff:
             cnt = 1
             tmp = 0
             ff.write("DATE,RR\n")
@@ -20,11 +20,11 @@ def prepare(path):
                 if cnt % 30 == 0:
                     ff.write(f"{cnt/30},{tmp/30}\n")
                     tmp = 0
-                if cnt > 365 * 10:
+                if cnt > 365 * 5:
                     break
 def main():
     prepare("/home/limuy/桌面/ECA_blend_rr/RR_STAID000036.txt")
-    data = pd.read_csv("tmp.csv")
+    data = pd.read_csv("tmprr.csv")
     # print(data.head(10))
     # print(data.columns)
     x = data["DATE"]
