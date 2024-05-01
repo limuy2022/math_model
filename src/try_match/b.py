@@ -38,7 +38,7 @@ def main():
             cnt += 1
     print("rate:", cnt / len(y_data))
     print(res.params, )
-    print(res.summary())
+    # print(res.summary())
 
 if __name__ == '__main__':
     main()
