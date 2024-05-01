@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.4.29)  30 APR 2024 12:06
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.4.29)  2 MAY 2024 00:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -381,7 +381,24 @@ LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10.5393
 7> not available
 (Font)              Font shape `TU/FandolSong-Regular(0)/m/it' tried instead on
  input line 25.
- [2] [3] [4] [5]
+ [2]
+
+Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
+(fontspec)                Script "CJK".
+
+
+Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
+(fontspec)             'FandolFang-Regular' with options
+(fontspec)             [Script={CJK},Extension={.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[FandolFang-Regular.otf]/OT:language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+[3] [4] [5]
 File: rust.jpg Graphic file (type bmp)
 <rust.jpg>
  [6] [7] [8] [9] (./src.aux)
@@ -391,11 +408,11 @@ L3 programming layer <2022/07/14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 9066 strings out of 476761
- 247465 string characters out of 5802895
- 1922839 words of memory out of 5000000
- 31003 multiletter control sequences out of 15000+600000
- 563587 words of font info for 78 fonts, out of 8000000 for 9000
+ 9119 strings out of 476761
+ 250809 string characters out of 5802895
+ 1936839 words of memory out of 5000000
+ 31049 multiletter control sequences out of 15000+600000
+ 563627 words of font info for 83 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  93i,11n,97p,513b,366s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
