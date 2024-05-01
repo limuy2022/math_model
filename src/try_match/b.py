@@ -36,9 +36,9 @@ def main():
     for i in range(len(y_data)):
         if abs(p[i] - y_data[i]) < 10:
             cnt += 1
-    print("rare:", cnt / len(y_data))
+    print("rate:", cnt / len(y_data))
     print(res.params, )
-    # print(res.summary())
+    print(res.summary())
 
 if __name__ == '__main__':
     main()

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import basic
 
 def main():
-    basic.prepare("/home/limuy/桌面/ECA_blend_fg/FG_STAID000011.txt", "FG", 10)
+    basic.prepare("/home/limuy/桌面/ECA_blend_fg/FG_STAID000011.txt", "FG", 15)
     data = pd.read_csv("tmpfg.csv")
     # print(data.head(10))
     # print(data.columns)
