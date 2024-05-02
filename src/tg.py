@@ -10,9 +10,8 @@ def main():
     # print(data.columns)
     x = data["DATE"]
     y = data["TG"]
-    plt.title("温度")
-    plt.xlabel("1960年起的天数除以30")
-    plt.ylabel("温度")
+    plt.title("Temperature")
+    plt.ylabel("Temperature")
     plt.plot(x, y)
     plt.show()
 

@@ -10,9 +10,8 @@ def main():
     # print(data.columns)
     x = data["DATE"]
     y = data["PP"]
-    plt.title("气压")
-    plt.xlabel("1960年起的天数除以30")
-    plt.ylabel("气压")
+    plt.title("Pressure")
+    plt.ylabel("Pressure")
     plt.plot(x, y)
     plt.show()
 

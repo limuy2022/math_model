@@ -9,9 +9,8 @@ def main():
     # print(data.columns)
     x = data["DATE"]
     y = data["HU"]
-    plt.title("湿度")
-    plt.xlabel("1960年起的天数除以30")
-    plt.ylabel("湿度")
+    plt.title("Humidity")
+    plt.ylabel("Humidity")
     plt.plot(x, y)
     plt.show()
 

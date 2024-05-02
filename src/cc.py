@@ -10,9 +10,8 @@ def main():
     x = data["DATE"]
     y = data["CC"]
     plt.plot(x, y)
-    plt.title("云层覆盖")
-    plt.xlabel("1960年起的天数除以30")
-    plt.ylabel("云层覆盖")
+    plt.title("Cloud Cover")
+    plt.ylabel("Cloud Cover")
     plt.show()
 
 if __name__ == '__main__':

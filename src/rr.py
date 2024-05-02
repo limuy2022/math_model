@@ -9,9 +9,8 @@ def main():
     # print(data.columns)
     x = data["DATE"]
     y = data["RR"]
-    plt.title("降水量")
-    plt.xlabel("1960年起的天数除以30")
-    plt.ylabel("降水量/mm")
+    plt.title("Rainfall")
+    plt.ylabel("Rainfall/mm")
     plt.plot(x, y)
     plt.show()
 

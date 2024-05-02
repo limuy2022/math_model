@@ -10,9 +10,8 @@ def main():
     x = data["DATE"]
     y = data["FG"]
     plt.plot(x, y)
-    plt.title("风速")
-    plt.xlabel("1960年起的天数除以30")
-    plt.ylabel("风速/0.1m*s^-1")
+    plt.title("Wind Speed")
+    plt.ylabel("Wind Speed/0.1m*s^-1")
     plt.show()
 
 if __name__ == '__main__':
