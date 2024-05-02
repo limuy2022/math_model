@@ -1,10 +1,13 @@
-\documentclass[UTF8]{ctexart}
+\documentclass[UTF8, a4paper]{ctexart}
 
+\usepackage{geometry}
 \usepackage{titlesec}
 \usepackage{titletoc}
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{hyperref}
+
+\geometry{a4paper, left = 2.7cm, right = 2.7cm, top = 2.54cm, bottom = 2.54cm}
 
 \captionsetup[figure]{skip=0pt}
 \captionsetup[table]{skip=0pt}
@@ -15,17 +18,17 @@
 
 \begin {document}
 
-  \maketitle
+\maketitle
 
-  \newpage
+\newpage
 
-  \tableofcontents
+\tableofcontents
 
-  \addcontentsline{tocloft}{section}{附录}
+\addcontentsline{tocloft}{section}{附录}
 
-  \newpage
+\newpage
 
-  \section{摘要}
+\section{摘要}
 
 本文针对局部地区的降雨量与其它气象相关的因素进行了数学模型的建立和求解的通用算法的设计，运用\textbf{线性回归，障碍计数，时间序列和神经网络}等模型分别进行了尝试，并且使用\textbf{遗传算法}优化了模型的求解。
 
@@ -39,48 +42,49 @@
 
 关键词：\texttt{神经网络回归模型}  \texttt{线性回归模型}  \texttt{遗传算法}
 
-  \newpage
+\newpage
 
-  \section{问题重述}
+\section{问题重述}
 
 \subsection{问题背景}
 
 在过去的几十年中，随着各行各业的迅速发展，气象对于人类生产生活的影响日益显著，对于气象预测的精确程度需要愈来愈高，降雨作为人们出行和农业生产的客观需要是非常关键的一部分。在当今时代，由于人类活动的影响日益增大和气象全球性变化的影响下，气象的预测越来越有必要与时俱进，因地制宜的适应局部气候的变化。
 
 
-  \section{模型假设和符号说明}
-  
-  该模型假设气象活动完全是周期性的，不考虑气候的逐渐变化，也不考虑人为因素的气候的干扰。
+\section{模型假设和符号说明}
 
-  \begin{table}[h]
-    \centering
-    \caption{符号说明}
-    \begin{tabular}{p{6em}l}
-      \hline 
-      符号 & 说明 \\
-      \hline 
-      $r$ & 降雨量 \\
-      $y$ & 模型的因变量 \\
-      \hline
-    \end{tabular}
-  \end{table}
+该模型假设气象活动完全是周期性的，不考虑气候的逐渐变化，也不考虑人为因素的气候的干扰。
 
-  \section{模型建立与求解}
-  
-  首先，从附录2中获取关于11号气象站(一个奥地利气象站)中的相关数据，考虑到尽可能减少人类活动的影响，本文主要研究该地区从1877年到1917的局部降水量。首先研究降水量与气压和温度的关系，获取完数据之后，按照$30$天为一组进行平均，画出各个自变量的图像如下
-    \begin{figure}[htbp]
-  	\centering
-  	\includegraphics[scale=0.5]{pp.png}
-  	\caption{气压覆盖关于时间的折线图}
-  \end{figure}
-  
-      \begin{figure}[htbp]
-  	\centering
-  	\includegraphics[scale=0.5]{tg.png}
-  	\caption{气温关于时间的折线图}
-  \end{figure}
-  
-  \begin{figure}[htbp]
+\begin{table}[h]
+	\centering
+	\caption{符号说明}
+	\begin{tabular}{p{6em}l}
+		\hline
+		符号  & 说明     \\
+		\hline
+		$r$ & 降雨量    \\
+		$y$ & 模型的因变量 \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\section{模型建立与求解}
+
+首先，从附录2中获取关于11号气象站(一个奥地利气象站)中的相关数据，考虑到尽可能减少人类活动的影响，本文主要研究该地区从1877年到1917的局部降水量。首先研究降水量与气压和温度的关系，获取完数据之后，按照$30$天为一组进行平均，画出各个自变量的图像如下
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{pp.png}
+	\caption{气压覆盖关于时间的折线图}
+\end{figure}
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{tg.png}
+	\caption{气温关于时间的折线图}
+\end{figure}
+
+\begin{figure}[h!]
 	\centering
 	\includegraphics[scale=0.5]{rr.png}
 	\caption{降水量关于时间的折线图}
@@ -94,21 +98,22 @@
 	\caption{拟合降水量和真是降水量的折线统计图}
 \end{figure}
 
-  \section{模型的优缺点与改进方法}
+
+\section{模型的优缺点与改进方法}
 
 
-  \section{参考文献}
+\section{参考文献}
 
 
-  \appendix
-  \setcounter{secnumdepth}{-2} 
-  \section{附录}
+\appendix
+\setcounter{secnumdepth}{-2}
+\section{附录}
 
-  \setcounter{secnumdepth}{3} 
-  \subsection{源代码}
-  
-  \subsection{数据来源}
-  
-  \href{https://www.ecad.eu/}{European Climate Assessment  Dataset}
+\setcounter{secnumdepth}{3}
+\subsection{源代码}
+
+\subsection{数据来源}
+
+\href{https://www.ecad.eu/}{European Climate Assessment  Dataset}
 
 \end {document}

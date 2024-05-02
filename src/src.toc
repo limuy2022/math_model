@@ -3,9 +3,9 @@
 \contentsline {subsection}{\numberline {2.1}问题背景}{4}{subsection.2.1}%
 \contentsline {section}{\numberline {3}模型假设和符号说明}{4}{section.3}%
 \contentsline {section}{\numberline {4}模型建立与求解}{4}{section.4}%
-\contentsline {section}{\numberline {5}模型的优缺点与改进方法}{7}{section.5}%
-\contentsline {section}{\numberline {6}参考文献}{7}{section.6}%
-\contentsline {section}{附录}{7}{section*.6}%
-\contentsline {subsection}{\numberline {.1}源代码}{7}{subsection.Alph0.1}%
-\contentsline {subsection}{\numberline {.2}数据来源}{7}{subsection.Alph0.2}%
+\contentsline {section}{\numberline {5}模型的优缺点与改进方法}{6}{section.5}%
+\contentsline {section}{\numberline {6}参考文献}{6}{section.6}%
+\contentsline {section}{附录}{6}{section*.6}%
+\contentsline {subsection}{\numberline {.1}源代码}{6}{subsection.Alph0.1}%
+\contentsline {subsection}{\numberline {.2}数据来源}{6}{subsection.Alph0.2}%
 \contentsfinish 
