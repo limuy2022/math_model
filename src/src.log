@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.4.29)  2 MAY 2024 13:10
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.4.29)  2 MAY 2024 20:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -607,34 +607,56 @@ Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
 [3]
 File: pp.png Graphic file (type bmp)
 <pp.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 File: tg.png Graphic file (type bmp)
 <tg.png>
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[4] [5]
 File: rr.png Graphic file (type bmp)
 <rr.png>
+ [6
+
+]
+File: fit1.png Graphic file (type bmp)
+<fit1.png>
+File: hu.png Graphic file (type bmp)
+<hu.png>
+File: fg.png Graphic file (type bmp)
+<fg.png>
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-File: rust.jpg Graphic file (type bmp)
-<rust.jpg>
-[4] [5] [6] (./src.aux)
+[7] [8]
+File: cc.png Graphic file (type bmp)
+<cc.png>
+File: fit2.png Graphic file (type bmp)
+<fit2.png>
+ [9
+
+]
+File: fit3.png Graphic file (type bmp)
+<fit3.png>
+ [10] [11] (./src.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `src.out' has not changed.
-(rerunfilecheck)             Checksum: AC7B601EBA84EBD91450505149188902;884.
+(rerunfilecheck)             Checksum: 9E964E4851BFE7674F220C0F33DFFC9C;1115.
  ) 
 Here is how much of TeX's memory you used:
- 16705 strings out of 474773
- 367626 string characters out of 5763519
- 1938839 words of memory out of 5000000
- 38646 multiletter control sequences out of 15000+600000
+ 16749 strings out of 476761
+ 368178 string characters out of 5802895
+ 1940839 words of memory out of 5000000
+ 38557 multiletter control sequences out of 15000+600000
  563987 words of font info for 84 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
+ 14 hyphenation exceptions out of 8191
  93i,11n,97p,513b,414s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on src.pdf (6 pages).
+Output written on src.pdf (11 pages).
