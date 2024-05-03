@@ -4,6 +4,9 @@ import pandas as pd
 import statsmodels.api as sm
 import numpy as np
 from matplotlib import pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.tree import export_text, DecisionTreeRegressor
+from sklearn.metrics import accuracy_score
 
 
 def gen_data():
@@ -53,9 +56,10 @@ def main():
     print(data_numpy)
     data_without_first_column = data_numpy[:, 1:]
     print(data_without_first_column)
+    X_train, X_test, y_train, y_test = train_test_split(data_without_first_column, y_data, test_size=0.2, random_state=42)
     # 创建线性回归模型
-    model = sm.OLS(y_data, data_without_first_column)
-    res = model.fit()
+    model = DecisionTreeRegressor()
+    res = model.fit(X_train, y_train)
 
     print("train rate:", get_rate1(res, data_without_first_column, y_data))
     print("train rate2:", get_rate2(res, data_without_first_column, y_data))
@@ -65,7 +69,8 @@ def main():
     test_y = y_data[test_idx]
     print("test rate:", get_rate1(res, test_x, test_y))
     print("test rate2:", get_rate2(res, test_x, test_y))
-    print([str(i) for i in res.params], )
+    with open("final.txt", "w") as f:
+        f.write(export_text(res, feature_names=['cc', 'hu', 'tg', "pp", "fg"]))
     draw(range(len(test_x)), test_y, res.predict(test_x))
     # print(res.summary())
 

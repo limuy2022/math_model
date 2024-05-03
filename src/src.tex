@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{caption}
 \usepackage{hyperref}
+\usepackage{listings}
 
 \geometry{a4paper, left = 2.7cm, right = 2.7cm, top = 2.54cm, bottom = 2.54cm}
 
@@ -17,7 +18,7 @@
 \captionsetup[figure]{skip=0pt}
 \captionsetup[table]{skip=0pt}
 
-\title{基于神经网络回归模型的降雨量问题研究}
+\title{基于决策树模型和神经网络模型的降雨量问题研究}
 
 \author{李沐阳 \and 易领程 \and 钟绍恒}
 
@@ -41,11 +42,11 @@
 
 随后扩大研究的范围，添加了\textbf{云层覆盖，湿度，风速}为新的自变量，由于此时线性回归在多个自变量的的相互影响下适应性较差，转变模型，根据深度学习的基本原理和神经网络中防止过拟合的技术，运用了神经网络回归模型进行拟合，在仅使用$5$个神经层，共$200$多个神经元的情况下取得了\textbf{绝对平均误差仅为$9mm$}的优异结果 。同时，我们也再次展开了遗传算法的尝试，在仅有$4$层共$10$个神经元的网络中取得了$50\%$的正确率，由于遗传算法在一定程度上的局限无法将神经元数量扩充到太大，但依旧提供了一种解决问题的新思路。
 
-在数据具有明显季节性质，且相邻的日期可能相互影响的情况下，我们也对\textbf{时间序列模型}进行了一定的尝试和研究，最后得到的效果也不如神经网络回归模型，原因可能是相互影响因素已经体现在了自变量中。经过进一步的分析，由于数据间并非存在明显的非线性关系，排除了\textbf{决策树模型}的可能性。尝试和分析过后，最后认为该神经网络模型更加准确。
+在数据具有明显季节性质，且相邻的日期可能相互影响的情况下，我们也对\textbf{时间序列模型}进行了一定的尝试和研究，最后得到的效果也不如神经网络回归模型，原因可能是相互影响因素已经体现在了自变量中。经过进一步的分析，尽管数据间并非存在明显的非线性关系，但是由于数据具有取值范围相对局限的特点，我们尝试了\textbf{决策树模型}，最终得到了满意的结果，绝对平均误差降到了$2.6\%$，正确率飙升到$88\%$左右。尝试和分析过后，最后认为该决策树模型更加准确。
 
 该模型具有预测率较高，和可以轻易扩展到新的自变量的优点。生成该模型的方法可以轻易地被用于生成\textbf{任何局部降雨模型}，非常简单易行。在考虑到气象的周期性而忽略人为影响的情况下，本模型具有较为准确的预测能力。
 
-关键词：\texttt{神经网络回归模型}  \texttt{线性回归模型}  \texttt{遗传算法}
+关键词：\texttt{神经网络回归模型}  \texttt{线性回归模型}  \texttt{遗传算法} \texttt{决策树模型}
 
 \newpage
 
@@ -132,7 +133,7 @@
 	\caption{云层覆盖关于时间的折线图}
 \end{figure}
 
-根据对数据关系的分析，发现此时已经有部分数据并不是时刻满足线性关系，但总体上还比较吻合，尝试继续用线性回归模型刻画，使用最小二乘法，得到模型为：$r=$,该模型的描述能力确实有一定程度上的提高，绝对平均误差保持在$10$mm,但是正确率达到了$64\%$左右，以下是5个自变量时的拟合图像：
+根据对数据关系的分析，发现此时已经有部分数据并不是时刻满足线性关系，但总体上还比较吻合，尝试继续用线性回归模型刻画，使用最小二乘法，得到模型为：$r=6.264621458073717c+0.23936949821555784h+0.18358187666124123t-0.004092803931093655p+0.23939598907957882f$,该模型的描述能力确实有一定程度上的提高，绝对平均误差保持在$10$mm,但是正确率达到了$64\%$左右，以下是5个自变量时的拟合图像：
 
 \begin{figure}[h!]
 	\centering
@@ -146,20 +147,29 @@
 
 经过初步调整参数，将训练次数定为比较合适的300次，200-300次均有不错的效果，但此时过拟合已经十分严重，在训练数据上达到了甚至达到了$100\%$，然而在测试数据上只有糟糕的$60\%$，经过一系列的尝试，我们使用了L2正则化和dropout的方式，再加上早停的策略(采用的是比较宽松的早停策略，并且会记录下训练中的最佳权值，训练一般进行100多次就会被早停)，成功的把训练数据和测试数据拉到一个水平线上，由于该模型需要用几个$64\times64$的矩阵描述，过于占篇幅，故在此处不给出。
 
-此时，模型已经达到了一个比较优秀的地步，正确率达到了$74\%$左右，绝对平均误差降到了$8.9$mm左右，绘制一下拟合图像：
+此时，模型已经达到了一个比较优秀的地步，正确率达到了$74\%$左右，绝对平均误差降到了$8$mm左右，绘制一下拟合图像：
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[scale=0.5]{fit3.png}
+	\includegraphics[scale=0.5]{success.png}
 	\caption{拟合降水量和真实降水量的折线统计图}
 \end{figure}
 
 非常明显，相比与之前的线性回归模型，神经网络回归模型的拟合准确度明显大大增强，但是对于某些特别极端的值似乎依旧有一些缺失，不过总体拟合的还算准确。
 
-下一步就是对模型类型进行进一步的尝试，我们首先对与神经网络模型在处理关系不明显数据方面同样显著的决策树模型，进行了检验，从理论上来看，数据间并非存在明显的非线性关系，这样的问题应当不太适合使用决策树模型刻画，但是对于降水量这样取值范围较为固定和小的特殊问题，用决策树模型可能也会有特殊的好效果。
+下一步就是对模型类型进行进一步的尝试，我们首先对与神经网络模型在处理关系不明显数据方面同样显著的决策树模型，进行了检验，从理论上来看，数据间并非存在明显的非线性关系，这样的问题应当不太适合使用决策树模型刻画，但是对于降水量这样取值范围较为固定和小的特殊问题，用决策树模型可能也会有特殊的好效果，决策树模型的代码因为与线性前两个模型相似度很高，在此处不贴出。以下是决策树模型的拟合图像：
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[scale=0.5]{very_success.png}
+	\caption{拟合降水量和真实降水量的折线统计图}
+\end{figure}
 
+完美的拟合图像！绝对平均误差从$8.9$骤降到$2.7$，而正确率飙升到$88\%$，结果好的有点超出预料了，但是仔细分析，可以得知也许是因为欧洲气象较为平均，没那么极端，决策树模型究其本质还是另类的一种分类讨论，若是在气象多变的广东地区，效果也许反而不如神经网络模型。神经网络模型和线性回归模型从本质上探索他们之间的数量关系，但决策树模型只是分类讨论罢了，对于出现次数少的预测能力不足，但是实践证明，也是一种非常切实可行的方案了。
 
+关于决策树模型的结果，由于仅能用大段文字分类描述，篇幅很大，故不放在附录中。
+
+\newpage
 
 \section{模型的优缺点与改进方法}
 
@@ -168,6 +178,9 @@
 
 \subsection{神经网络回归模型}
 基于神经网络的模型具有普适性更加强的特点，在降雨量受到如此多方面的影响的情况下对其中的几个关键变量进行研究能达到还不错的效果，实践起来也不算特别麻烦，该方法可以利用神经网络强大的调整和适应能力用来研究各个地区的局部降雨量。不足之处在于，若是把时间范围拉得很大，会导致模型由于气候变化和人类活动导致不准确性增加，而且模型也并没有针对季节等进行描述，可以从两方面考虑增强方法，一是结合一定的时间序列模型来解决气候变化和人类活动的问题，因为这两个因素也是按照一定的规律变化的，神经网络可以学习出其中的趋势，二是考虑季节性的特点，一定程度上可以使用有季节性的时间序列模型来缓解，但还有一种思路就是添加更多的自变量来间接反应季节的影响，因为气象总体是呈周期性的，例如可以添加风向作为自变量，来间接的反映季风，进而反映出季节的变化，感觉这种思路可能会好一点。
+
+\subsection{决策树模型}
+由于决策树模型可以随意调整叶子节点和非叶子节点的分界点，从而使数据尽可能的良好匹配所有的数据的特性和天气取值范围并不是很大的特点，使得它对于气候这种并非不具有显著函数关系的问题拟合程度非常高，几乎可以说是十分精确的预测了。但是另一方面，对于极端情况的预测效果一定是很差的，因为数据被设计的尽量靠近正常的数据了，就会使得偏离不常出现的值，但是，若是我们把前两个模型综合起来看，使用线性回归模型和神经网络回归模型生成极端数据，再交由决策树模型拟合，就可以在一定程度上缓解这个问题，三个模型可以相辅相成，决策树模型也可以反过来帮助神经网络模型缓解过拟合的问题。
 
 \section{参考文献}
 
@@ -184,5 +197,54 @@
 \subsection{数据来源}
 
 \href{https://www.ecad.eu/}{European Climate Assessment  Dataset}
+
+\subsection{自变量为2或5的线性回归模型核心代码}
+
+\begin{lstlisting}[language=Python]
+	data = pd.read_csv('merged_data_file.csv')
+	y_data = pd.read_csv("../tmprr.csv")
+	y_data = y_data['RR'].values
+	data_numpy = data.to_numpy()
+	print(data_numpy)
+	data_without_first_column = data_numpy[:, 1:]
+	print(data_without_first_column)
+	# 创建线性回归模型
+	model = sm.OLS(y_data, data_without_first_column)
+	res = model.fit()
+	
+	print("train rate:", get_rate1(res, data_without_first_column, y_data))
+	print("train rate2:", get_rate2(res, data_without_first_column, y_data))
+	test_data_num = int(len(data_without_first_column) * 0.2)
+	test_idx = np.random.choice(len(data_without_first_column), test_data_num, replace=False)
+	test_x = data_without_first_column[test_idx]
+	test_y = y_data[test_idx]
+	print("test rate:", get_rate1(res, test_x, test_y))
+	print("test rate2:", get_rate2(res, test_x, test_y))
+	print(res.params, )
+	draw(range(len(test_x)), test_y, res.predict(test_x))
+\end{lstlisting}
+
+\subsection{神经网络回归模型核心代码}
+\begin{lstlisting}[language=Python]
+	scaler = StandardScaler()
+	X_scaled = scaler.fit_transform(data_without_first_column)
+	y_scaled = scaler.fit_transform(y_data.reshape(-1, 1))
+	X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_size=0.2, random_state=42)
+	early_stopping = EarlyStopping(monitor='val_loss', patience=10, restore_best_weights=True)
+	model = tensorflow.keras.models.Sequential()
+	model.add(Dense(64, activation='leaky_relu'))
+	model.add(Dense(64, activation='leaky_relu', kernel_regularizer=l2(0.01)))
+	model.add(Dropout(0.5))
+	model.add(Dense(64, activation='leaky_relu', kernel_regularizer=l2(0.02)))
+	model.add(Dropout(0.5))
+	model.add(Dense(64, activation='leaky_relu', kernel_regularizer=l2(0.02)))
+	model.add(Dropout(0.5))
+	# model.add(Dense(64, activation='relu'))
+	model.add(Dense(64, activation='leaky_relu'))
+	model.add(Dense(1))
+	
+	model.compile(loss='mean_squared_error', optimizer='adam')
+	model.fit(X_train, y_train, epochs=300, batch_size=32, validation_data=(X_test, y_test), callbacks=[early_stopping])
+\end{lstlisting}
 
 \end {document}
