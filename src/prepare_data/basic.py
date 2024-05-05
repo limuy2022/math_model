@@ -1,6 +1,6 @@
-def prepare(path, form:str, year):
+def prepare(path, form: str, year):
     year += 10
-    with open(path, 'r') as f:
+    with open(path, "r") as f:
         for i in range(21):
             f.readline()
         with open(f"tmp{form.lower()}.csv", "w") as ff:
@@ -9,7 +9,7 @@ def prepare(path, form:str, year):
             ff.write(f"DATE,{form.upper()}\n")
             flag = False
             for i in f:
-                l = [i.strip() for i in i.split(',')]
+                l = [i.strip() for i in i.split(",")]
                 if l[2][:4] != "1877" and not flag:
                     continue
                 flag = True
