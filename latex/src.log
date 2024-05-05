@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.4.29)  5 MAY 2024 09:19
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.4.29)  5 MAY 2024 09:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -873,11 +873,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [4]
-Missing character: There is no ̃ ("303) in font cmmi10!
 File: success.png Graphic file (type bmp)
 <success.png>
 File: very_success.png Graphic file (type bmp)
 <very_success.png>
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -930,10 +930,10 @@ Package rerunfilecheck Info: File `src.out' has not changed.
 (rerunfilecheck)             Checksum: F5DB4D3771D902CA2F61037D08C1E525;2244.
  ) 
 Here is how much of TeX's memory you used:
- 23208 strings out of 476761
- 525235 string characters out of 5802895
+ 23207 strings out of 476761
+ 525228 string characters out of 5802895
  2030839 words of memory out of 5000000
- 44952 multiletter control sequences out of 15000+600000
+ 44951 multiletter control sequences out of 15000+600000
  566498 words of font info for 96 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  93i,12n,97p,1189b,1021s stack positions out of 10000i,1000n,20000p,200000b,200000s
