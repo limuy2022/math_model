@@ -1,6 +1,6 @@
 [
 {
-  "directory": "/home/omo/文档/code_space/cpp_code/math_model/data_solution",
-  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-g", "-Wall", "-Wextra", "-Weffc++", "-O0", "-std=c++20", "-Iinclude", "-I", "/home/omo/.xmake/packages/e/eigen/3.4.0/c95d81810dbc45229e675130ada7d4c7/include", "-I", "/home/omo/.xmake/packages/e/eigen/3.4.0/c95d81810dbc45229e675130ada7d4c7/include/eigen3", "-o", "build/.objs/train_data/linux/x86_64/debug/src/train_main.cpp.o", "src/train_main.cpp"],
+  "directory": "/home/limuy/桌面/weather/gene_algo/data_solution",
+  "arguments": ["/usr/bin/gcc", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-Wall", "-Wextra", "-Weffc++", "-O3", "-std=c++20", "-Iinclude", "-I", "/home/limuy/.xmake/packages/e/eigen/3.4.0/c95d81810dbc45229e675130ada7d4c7/include", "-I", "/home/limuy/.xmake/packages/e/eigen/3.4.0/c95d81810dbc45229e675130ada7d4c7/include/eigen3", "-DNDEBUG", "-o", "build/.objs/train_data/linux/x86_64/release/src/train_main.cpp.o", "src/train_main.cpp"],
   "file": "src/train_main.cpp"
 }]

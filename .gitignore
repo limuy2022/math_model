@@ -2,3 +2,4 @@
 .xmake/
 __pycache__/
 *.csv
+.cache/
