@@ -22,6 +22,9 @@
 \usepackage[UTF8]{ctex}
 \usepackage{fontspec}
 
+\captionsetup[figure]{skip=0pt}
+\captionsetup[table]{skip=0pt}
+
 % 设置文档的默认字体为华文仿宋
 
 
@@ -185,69 +188,69 @@
 
 
 \begin{document}
-	{
-		% Remove headline and footline from first slide
-		\setbeamertemplate{footline}{} 
-		\setbeamertemplate{headline}{} 
-			% 插入标题页---------------------------
-		\frame{\titlepage}
-	}
+{
+% Remove headline and footline from first slide
+\setbeamertemplate{footline}{}
+\setbeamertemplate{headline}{}
+% 插入标题页---------------------------
+\frame{\titlepage}
+}
 
-	
-	%插入目录------------------------------
 
-	
+%插入目录------------------------------
+
+
 
 \begin{frame}
 	\frametitle{MSGNet：学习多变量时间序列预测中的多尺度间序列相关性}
 
 
-\begin{description}
-	\item[论文标题:]  基于决策树模型和神经网络模型的降雨量问题研究
-	% \item[论文链接:]   \url{https://doi.org/10.48550/arXiv.2401.00423}
-	\item[代码链接:]   \url{https://github.com/limuy2022/math_model}
-	\item[发表年份:]   2024
-	% \item[发表平台:]  AAAI
-	% \item[平台等级:]  CCF A
-	\item[作者信息:]   李沐阳$^1$ ,钟绍恒$^2$ , 易领程$^3$
-	
-	\begin{enumerate}
-		\item  东莞市东华高级中学120班学生
-		\item 	 东莞市东华高级中学120班学生
-		\item 	 东莞市东华高级中学120班学生
-	\end{enumerate}
-\end{description}
+	\begin{description}
+		\item[论文标题:]  基于决策树模型和神经网络模型的降雨量问题研究
+		      % \item[论文链接:]   \url{https://doi.org/10.48550/arXiv.2401.00423}
+		\item[代码链接:]   \url{https://github.com/limuy2022/math_model}
+		\item[发表年份:]   2024
+		      % \item[发表平台:]  AAAI
+		      % \item[平台等级:]  CCF A
+		\item[作者信息:]   李沐阳$^1$ ,钟绍恒$^2$ , 易领程$^3$
+
+		      \begin{enumerate}
+			      \item  东莞市东华高级中学120班学生
+			      \item 	 东莞市东华高级中学120班学生
+			      \item 	 东莞市东华高级中学120班学生
+		      \end{enumerate}
+	\end{description}
 
 \end{frame}
 
 \section{研究背景}
 \begin{frame}
-\frametitle{研究背景}
-\begin{block}{研究背景}
-现如今, 气候无不影响着人类的生活, 探寻其中各种因素的关系成为了当务之急.
-在此前提下, 我们决定着手降水量的研究, 试图为气象研究提供参考.
-考虑到现实因素的复杂性, 我们决定简化问题，将其转化为$5$个自变量和
- $1$个因变量之间的函数关系.
-本篇论文主要研究欧洲``降水量``与``气温``、``海平面气压``、 ``风
-速``、``湿度``、``云层覆盖``之间的关系.
-同时, 为了方便表达, 我们规定了一下符号以及其中的单位,
-\begin{table}[h!]
-	\centering
-	\caption{符号说明}
-	\begin{tabular}{p{6em}p{6em}l}
-		\hline
-		符号  & 说明   & 单位                          \\
-		\hline
-		$r$ & 降雨量  & \si{\milli\meter}           \\
-		$t$ & 温度   & $0.1$\si{\degreeCelsius}    \\
-		$f$ & 风速   & $0.1$\si{\meter\per\second} \\
-		$h$ & 湿度   & $0.1\%$                     \\
-		$c$ & 云层覆盖 & \si{octas}                  \\
-		$p$ & 气压   & $0.1$\si{h\pascal}          \\
-		\hline
-	\end{tabular}
-\end{table}
-\end{block}
+	\frametitle{研究背景}
+	\begin{block}{研究背景}
+		现如今, 气候无不影响着人类的生活, 探寻其中各种因素的关系成为了当务之急.
+		在此前提下, 我们决定着手降水量的研究, 试图为气象研究提供参考.
+		考虑到现实因素的复杂性, 我们决定简化问题，将其转化为$5$个自变量和
+		$1$个因变量之间的函数关系.
+		本篇论文主要研究欧洲``降水量``与``气温``、``海平面气压``、 ``风
+		速``、``湿度``、``云层覆盖``之间的关系.
+		同时, 为了方便表达, 我们规定了一下符号以及其中的单位,如下表所示：
+	\end{block}
+	\begin{table}[h!]
+		\centering
+		\caption{符号说明}
+		\begin{tabular}{p{6em}p{6em}l}
+			\hline
+			符号  & 说明   & 单位                          \\
+			\hline
+			$r$ & 降雨量  & \si{\milli\meter}           \\
+			$t$ & 温度   & $0.1$\si{\degreeCelsius}    \\
+			$f$ & 风速   & $0.1$\si{\meter\per\second} \\
+			$h$ & 湿度   & $0.1\%$                     \\
+			$c$ & 云层覆盖 & \si{octas}                  \\
+			$p$ & 气压   & $0.1$\si{h\pascal}          \\
+			\hline
+		\end{tabular}
+	\end{table}
 \end{frame}
 
 \end{document}<ScrollWheelUp>
