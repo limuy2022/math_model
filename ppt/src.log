@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  7 MAY 2024 17:35
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  7 MAY 2024 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1249,7 +1249,7 @@ LaTeX Font Info:    No file TUpbk.fd. on input line 175.
 LaTeX Font Warning: Font shape `TU/pbk/m/n' undefined
 (Font)              using `TU/lmr/m/n' instead on input line 175.
 
-No file src.aux.
+(./src.aux)
 \openout1 = `src.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 175.
@@ -1272,6 +1272,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 175.
 LaTeX Font Info:    ... okay on input line 175.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 175.
 LaTeX Font Info:    ... okay on input line 175.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1307,11 +1308,9 @@ LaTeX Font Info:    ... okay on input line 175.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 175.
+(./src.out) (./src.out)
 \@outlinefile=\write5
 \openout5 = `src.out'.
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
@@ -1440,9 +1439,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  TU/pcr/b/n --> TU/pcr/b/n on input line 175.
 \c@lstlisting=\count413
-
-No file src.nav.
-[1
+ (./src.nav) [1
 
 ]
 
@@ -1489,9 +1486,7 @@ LaTeX Font Warning: Font shape `TU/pbk/b/n' undefined
 
 [2
 
-]
-No file src.toc.
-[3
+] (./src.toc) [3
 
 ] [4
 
@@ -1514,22 +1509,16 @@ L3 programming layer <2022/08/05>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `src.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `src.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D5342BBC5729458FFB0F38C1C6DCB0BA;59.
+Package rerunfilecheck Info: File `src.out' has not changed.
+(rerunfilecheck)             Checksum: D5342BBC5729458FFB0F38C1C6DCB0BA;59.
  ) 
 Here is how much of TeX's memory you used:
- 32413 strings out of 474878
- 709560 string characters out of 5762517
- 1934627 words of memory out of 5000000
- 53835 multiletter control sequences out of 15000+600000
- 561914 words of font info for 65 fonts, out of 8000000 for 9000
+ 32489 strings out of 474878
+ 711148 string characters out of 5762517
+ 1935627 words of memory out of 5000000
+ 53899 multiletter control sequences out of 15000+600000
+ 561930 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,16n,123p,482b,786s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,20n,123p,482b,815s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on src.pdf (4 pages).
