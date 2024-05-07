@@ -1,5 +1,5 @@
 def prepare(path, form: str, year):
-    year += 10
+    year = 100
     with open(path, "r") as f:
         for i in range(21):
             f.readline()
