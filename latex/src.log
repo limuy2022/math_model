@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  7 MAY 2024 07:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  7 MAY 2024 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -745,10 +745,6 @@ Package hyperref Info: Link coloring ON on input line 55.
 \@outlinefile=\write3
 \openout3 = `src.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 \c@lstlisting=\count347
 
 (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
@@ -766,9 +762,6 @@ LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
 [1
 
 ]
-
-LaTeX Warning: Reference `data' on page 2 undefined on input line 159.
-
 
 Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
 (fontspec)                Script "CJK".
@@ -836,10 +829,6 @@ Overfull \hbox (15.17892pt too wide) in paragraph at lines 207--208
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-LaTeX Warning: Reference `liner_program' on page 2 undefined on input line 218.
-
-
 LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10.5393
 7> not available
 (Font)              Font shape `TU/FandolSong-Regular(0)/m/it' tried instead on
@@ -853,11 +842,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [2]
-
-LaTeX Warning: Reference `pic7' on page 3 undefined on input line 219.
-
 File: fit1.png Graphic file (type bmp)
 <fit1.png>
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -874,9 +861,6 @@ File: fit2.png Graphic file (type bmp)
 <fit2.png>
 
 
-LaTeX Warning: Reference `net_program' on page 4 undefined on input line 268.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.64723pt, for example:
 (fancyhdr)                \setlength{\headheight}{12.64723pt}.
@@ -887,12 +871,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 [4]
 File: success.png Graphic file (type bmp)
 <success.png>
-
-
-LaTeX Warning: Reference `pic10' on page 5 undefined on input line 304.
-
 File: very_success.png Graphic file (type bmp)
 <very_success.png>
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -941,27 +922,15 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `src.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `src.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  F5DB4D3771D902CA2F61037D08C1E525;2244.
+Package rerunfilecheck Info: File `src.out' has not changed.
+(rerunfilecheck)             Checksum: F5DB4D3771D902CA2F61037D08C1E525;2244.
  ) 
 Here is how much of TeX's memory you used:
- 23140 strings out of 474878
- 524794 string characters out of 5762517
+ 23143 strings out of 474878
+ 524772 string characters out of 5762517
  2028627 words of memory out of 5000000
- 44912 multiletter control sequences out of 15000+600000
- 566506 words of font info for 97 fonts, out of 8000000 for 9000
+ 44917 multiletter control sequences out of 15000+600000
+ 566498 words of font info for 96 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,12n,97p,1189b,1021s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

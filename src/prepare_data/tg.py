@@ -13,7 +13,8 @@ def main():
     plt.title("Temperature")
     plt.ylabel("Temperature/0.1°C")
     plt.plot(x, y)
-    plt.show()
+    plt.savefig("tg.png")
+    # plt.show()
 
 
 if __name__ == "__main__":

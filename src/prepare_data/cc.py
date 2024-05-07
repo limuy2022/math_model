@@ -13,7 +13,8 @@ def main():
     plt.plot(x, y)
     plt.title("Cloud Cover")
     plt.ylabel("Cloud Cover/octas")
-    plt.show()
+    # plt.show()
+    plt.savefig("cc.png")
 
 
 if __name__ == "__main__":

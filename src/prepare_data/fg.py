@@ -13,7 +13,8 @@ def main():
     plt.plot(x, y)
     plt.title("Wind Speed")
     plt.ylabel("Wind Speed/0.1m*s^-1")
-    plt.show()
+    # plt.show()
+    plt.savefig("fg.png")
 
 
 if __name__ == "__main__":

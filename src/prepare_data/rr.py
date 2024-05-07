@@ -13,7 +13,8 @@ def main():
     plt.title("Rainfall")
     plt.ylabel("Rainfall/mm")
     plt.plot(x, y)
-    plt.show()
+    # plt.show()
+    plt.savefig("rr.png")
 
 
 if __name__ == "__main__":

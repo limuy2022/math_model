@@ -13,7 +13,8 @@ def main():
     plt.title("Humidity")
     plt.ylabel("Humidity/0.1%")
     plt.plot(x, y)
-    plt.show()
+    # plt.show()
+    plt.savefig("hu.png")
 
 
 if __name__ == "__main__":

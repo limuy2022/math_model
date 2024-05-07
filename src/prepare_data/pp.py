@@ -13,7 +13,8 @@ def main():
     plt.title("Pressure")
     plt.ylabel("Pressure/0.1hPa")
     plt.plot(x, y)
-    plt.show()
+    # plt.show()
+    plt.savefig("pp.png")
 
 
 if __name__ == "__main__":
