@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  8 MAY 2024 07:55
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  8 MAY 2024 07:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1624,20 +1624,14 @@ L3 programming layer <2022/07/14>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `src.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `src.out':
-(rerunfilecheck)             Before: 9BB912D891E3F34F513902354A4D66A5;115
-(rerunfilecheck)             After:  43645BFEA69AE0C41A7EFDCD8AE35F93;295.
+Package rerunfilecheck Info: File `src.out' has not changed.
+(rerunfilecheck)             Checksum: FE13BB78C86AA5BB6E96B219B30FA995;190.
  ) 
 Here is how much of TeX's memory you used:
- 37993 strings out of 474878
- 864950 string characters out of 5762517
- 1945627 words of memory out of 5000000
- 59365 multiletter control sequences out of 15000+600000
+ 38000 strings out of 474878
+ 865006 string characters out of 5762517
+ 1946627 words of memory out of 5000000
+ 59372 multiletter control sequences out of 15000+600000
  561954 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,482b,989s stack positions out of 10000i,1000n,20000p,200000b,200000s
