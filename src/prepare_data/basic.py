@@ -3,7 +3,7 @@ def prepare(path, form: str, year):
     with open(path, "r") as f:
         for i in range(21):
             f.readline()
-        with open(f"tmp{form.lower()}.csv", "w") as ff:
+        with open(f"../tmp{form.lower()}.csv", "w") as ff:
             cnt = 1
             tmp = 0
             ff.write(f"DATE,{form.upper()}\n")
