@@ -8,8 +8,8 @@ def main():
     data = pd.read_csv("../tmptg.csv")
     # print(data.head(10))
     # print(data.columns)
-    x = data["DATE"]
-    y = data["TG"]
+    x = data["DATE"].head(10 * 12)
+    y = data["TG"].head(10 * 12)
     plt.title("Temperature")
     plt.ylabel("Temperature/0.1°C")
     plt.plot(x, y)

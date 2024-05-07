@@ -8,8 +8,8 @@ def main():
     data = pd.read_csv("../tmpcc.csv")
     # print(data.head(10))
     # print(data.columns)
-    x = data["DATE"]
-    y = data["CC"]
+    x = data["DATE"].head(10 * 12)
+    y = data["CC"].head(10 * 12)
     plt.plot(x, y)
     plt.title("Cloud Cover")
     plt.ylabel("Cloud Cover/octas")

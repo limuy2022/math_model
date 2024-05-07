@@ -8,8 +8,8 @@ def main():
     data = pd.read_csv("../tmppp.csv")
     # print(data.head(10))
     # print(data.columns)
-    x = data["DATE"]
-    y = data["PP"]
+    x = data["DATE"].head(10 * 12)
+    y = data["PP"].head(10 * 12)
     plt.title("Pressure")
     plt.ylabel("Pressure/0.1hPa")
     plt.plot(x, y)

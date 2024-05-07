@@ -8,8 +8,8 @@ def main():
     data = pd.read_csv("../tmpfg.csv")
     # print(data.head(10))
     # print(data.columns)
-    x = data["DATE"]
-    y = data["FG"]
+    x = data["DATE"].head(12 * 10)
+    y = data["FG"].head(10 * 12)
     plt.plot(x, y)
     plt.title("Wind Speed")
     plt.ylabel("Wind Speed/0.1m*s^-1")

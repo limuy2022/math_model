@@ -170,13 +170,13 @@
 	\centering
 	\begin{minipage}[h!]{0.4\textwidth}
 		\centering
-		\includegraphics[scale=0.3]{pp.png}
+		\includegraphics[scale=0.3]{../src/prepare_data/pp.png}
 		\caption{气压覆盖关于时间的折线图}
 	\end{minipage}
 	\qquad
 	\begin{minipage}[h!]{0.4\textwidth}
 		\centering
-		\includegraphics[scale=0.3]{tg.png}
+		\includegraphics[scale=0.3]{../src/prepare_data/tg.png}
 		\caption{气温关于时间的折线图}
 	\end{minipage}
 \end{figure}
@@ -185,12 +185,12 @@
 	\centering
 	\begin{minipage}[h!]{0.4\textwidth}
 		\centering
-		\includegraphics[scale=0.3]{rr.png}
+		\includegraphics[scale=0.3]{../src/prepare_data/rr.png}
 		\caption{降水量关于时间的折线图}
 	\end{minipage}
 	\begin{minipage}[h!]{0.4\textwidth}
 		\centering
-		\includegraphics[scale=0.3]{hu.png}
+		\includegraphics[scale=0.3]{../src/prepare_data/hu.png}
 		\caption{湿度关于时间的折线图}
 	\end{minipage}
 \end{figure}
@@ -199,12 +199,12 @@
 	\centering
 	\begin{minipage}[h!]{0.4\textwidth}
 		\centering
-		\includegraphics[scale=0.3]{fg.png}
+		\includegraphics[scale=0.3]{../src/prepare_data/fg.png}
 		\caption{风速关于时间的折线图}
 	\end{minipage}
 	\begin{minipage}[h!]{0.4\textwidth}
 		\centering
-		\includegraphics[scale=0.3]{cc.png}
+		\includegraphics[scale=0.3]{../src/prepare_data/cc.png}
 		\caption{云层覆盖关于时间的折线图}
 	\end{minipage}
 \end{figure}
@@ -310,8 +310,11 @@ $$r=0.1168736t+0.00188574p$$画出拟合图像与真实图像如图~\textcolor{r
 \end{figure}
 
 拟合程度很高的图像.绝对平均误差从$8.9$\si{\milli\meter}骤降到$2.7$\si{\milli\meter}，而正确率飙升到$88\%$，结果较好.
-仔细分析，可以得知也许是因为欧洲气象较为平均，没那么极端，决策树模型究其
-本质还是一种另类的分类讨论，若是在气象多变的广东地区，效果也许反而不如神经网
+
+由于我们的数据范围较大，决策树模型的训练算法会尽量在较大尺度上寻找数据的普遍规律，具有一定的准确度，决策树模型通过,对于给定数据的每一个取值都产生一个相应的分支来拟合数据，虽然存在属性的交叉，但是数据范围还是比较大
+
+仔细分析，可以得知也许是因为欧洲气象较为平均，没那么极端，决策树模型虽然尝试在较大的尺度上寻找数据普遍的分类依据,究其
+本质还是一种另类的分类讨论，若是在气象多变的广东地区，数据量相同的情况下，效果也许反而不如神经网
 络模型.神经网络模型和线性回归模型从本质上探索他们之间的数量关系，但决策树模型
 只是分类讨论罢了，对于出现次数少的预测能力不足，但是实践证明，也是一种非常切实可行的方案了.
 \footnote{见附录~\textcolor{red}{\ref{tree_result}}.}
