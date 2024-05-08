@@ -339,11 +339,25 @@
 		正确率为$60\%$左右,最小二乘法的拟合图像如下所示:
 		\begin{figure}[h!]
 			\centering
-			\includegraphics[scale=0.2]{fit2.png}
+			\includegraphics[scale=0.2]{../src/try_match/ols_five.png}
 			\caption{拟合降水量和真实降水量的折线统计图}
 		\end{figure}
 	\end{block}
 \end{frame}
 
+\subsection{神经网络}
+\begin{frame}
+	\frametitle{神经网络}
+	\begin{block}{网络规模}
+		本网络采用的规模为$5 \times 64 \times 64 \times 64 \times 64 \times 1$的全连接神经网络$^1$.
+		其中, 第$1$层为输入的五个自变量, 第$6$层的值为降水量的预测值.
+		神经元采用的激活函数为Leaky ReLU函数$^2$.
+		\begin{enumerate}
+			\item 全连接神经网络(Fully Connected Neural Network,简称FCNN)是一种最基础的人工神经网络结构,也称
+			      为多层感知器(Multilayer Perceptron,MLP)
+			\item 函数表达式为:$f(x)=\max(0, x) + \alpha \cdot \min(0, x)$
+		\end{enumerate}
+	\end{block}
+\end{frame}
 
 \end{document}<ScrollWheelUp>
