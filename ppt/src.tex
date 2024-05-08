@@ -354,8 +354,21 @@
 		神经元采用的激活函数为Leaky ReLU函数$^2$.
 		\begin{enumerate}
 			\item 全连接神经网络(Fully Connected Neural Network,简称FCNN)是一种最基础的人工神经网络结构,也称
-			      为多层感知器(Multilayer Perceptron,MLP)
-			\item 函数表达式为:$f(x)=\max(0, x) + \alpha \cdot \min(0, x)$
+			      为多层感知器(Multilayer Perceptron,MLP).
+			\item 函数表达式为:\qquad$f(x)=\max(0, x) + \alpha \cdot \min(0, x)$.
+		\end{enumerate}
+	\end{block}
+	\begin{block}{训练方法}
+		本网络采用较为普遍的梯度下降$^1$和反向传播算法$^2$进行训练.
+		\begin{enumerate}
+			\item 梯度下降,英文名Gradient Descent,是一种用来最小化
+			      函数的优化算法.它的工作原理就像一个探险家在山上寻找最
+			      低点.探险家在每一步都会选择下坡的方向，直到他找到一个
+			      地方,无论向哪个方向走,都是上坡,那么他就知道他已经找到了最低点.
+			\item 反向传播,英文名Backpropagation,是一种在
+			      神经网络中用来调整权重和偏置的方法.它的工作原理就
+			      像一个电影导演,指导演员们(神经元)如何更好地表演
+			      (调整权重和偏置),以达到最好的观众反馈(最小化损失函数)
 		\end{enumerate}
 	\end{block}
 \end{frame}
