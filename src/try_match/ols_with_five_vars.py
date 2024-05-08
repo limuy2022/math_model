@@ -1,8 +1,9 @@
 import random
+
 import numpy
+import numpy as np
 import pandas as pd
 import statsmodels.api as sm
-import numpy as np
 from matplotlib import pyplot as plt
 
 
@@ -83,6 +84,8 @@ def main():
     print(
         [str(i) for i in res.params],
     )
+    test_x = test_x[:100]
+    test_y = test_y[:100]
     draw(range(len(test_x)), test_y, res.predict(test_x), "ols_five.png")
     # print(res.summary())
 
