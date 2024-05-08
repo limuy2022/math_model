@@ -285,15 +285,17 @@
 
 \begin{frame}
 	\frametitle{最小二乘法简介}
-	\begin{block}{最小二乘法}
+	\begin{block}{基本概念}
 		最小二乘法是一种求解线性方程组的方法, 该方法的基本思想是将
 		线性方程组表示为如下形式的最小二乘方程组:
 		\begin{equation}
-			\begin{cases}
-				y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 + \beta_4 x_4 + \beta_5 x_5 \\
-			\end{cases}
+			% \begin{cases}
+			y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 + \beta_4 x_4 + \beta_5 x_5
+			% \end{cases}
 		\end{equation}
 		其中$x_1$、$x_2$、$x_3$、$x_4$、$x_5$分别代表云层覆盖、湿度、气温、气压、风速.
+	\end{block}
+	\begin{block}{求解公式}
 		最小二乘法的求解公式如下所示：
 		\begin{equation}
 			\begin{cases}
@@ -308,24 +310,31 @@
 		\end{equation}
 		其中$\bar{y}$、$\bar{x_1}$、$\bar{x_2}$、$\bar{x_3}$、$\bar{x_4}$、$\bar{x_5}$分别代表
 		降水量的均值、云层覆盖的均值、湿度的均值、气温的均值、气压的均值、风速的均值.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{最小二乘法结果}
+	\begin{block}{最小二乘法结果}
 		最小二乘法的求解结果如下所示：
 		% \begin{align}
 		% 	\notag
-		% 	r & =6.264621458073717c+0.23936949821555784h+0.18358187666124123t \\
+		% 	r & =315.80363888548624+6.197181723408759c+0.15411116711110595h \\
 		% 	\notag
-		% 	  & \qquad -0.004092803931093655p+0.23939598907957882f
+		% 	  & \qquad +0.16901104754961455t-0.03432027705042855p+0.17773547386441546f
 		% \end{align}
 		\begin{equation}
 			\begin{cases}
-				\beta_0 = 0.                    \\
-				\beta_1 = 6.264621458073717     \\
-				\beta_2 = 0.23936949821555784   \\
-				\beta_3 = 0.18358187666124123   \\
-				\beta_4 = -0.004092803931093655 \\
-				\beta_5 = 0.23939598907957882   \\
+				\beta_0 = 315.80363888548624   \\
+				\beta_1 = 6.197181723408759    \\
+				\beta_2 = 0.15411116711110595  \\
+				\beta_3 = 0.16901104754961455  \\
+				\beta_4 = -0.03432027705042855 \\
+				\beta_5 = 0.17773547386441546
 			\end{cases}
 		\end{equation}
 	\end{block}
 \end{frame}
+
 
 \end{document}<ScrollWheelUp>
