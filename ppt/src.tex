@@ -202,7 +202,7 @@
 
 
 \begin{frame}
-	\frametitle{MSGNet：学习多变量时间序列预测中的多尺度间序列相关性}
+	\frametitle{基于决策树模型和神经网络模型的降雨量问题研究}
 
 
 	\begin{description}
@@ -287,14 +287,44 @@
 	\frametitle{最小二乘法简介}
 	\begin{block}{最小二乘法}
 		最小二乘法是一种求解线性方程组的方法, 该方法的基本思想是将
-		线性方程组表示为如下形式的最小二乘方程组
+		线性方程组表示为如下形式的最小二乘方程组:
 		\begin{equation}
 			\begin{cases}
 				y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 + \beta_4 x_4 + \beta_5 x_5 \\
-				y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 x_3 + \beta_4 x_4 + \beta_5 x_5 \\
 			\end{cases}
 		\end{equation}
-		其中$x_1$、$x_2$、$x_3$、$x_4$、$x_5$分别代表降水量、气温、气压、风速、湿度、云层覆盖
+		其中$x_1$、$x_2$、$x_3$、$x_4$、$x_5$分别代表云层覆盖、湿度、气温、气压、风速.
+		最小二乘法的求解公式如下所示：
+		\begin{equation}
+			\begin{cases}
+				% \bar{y} = \beta_0 + \beta_1 \bar{x_1} + \beta_2 \bar{x_2} + \beta_3 \bar{x_3} + \beta_4 \bar{x_4} + \beta_5 \bar{x_5} \\
+				\beta_0 = \bar{y} - \beta_1 \bar{x_1} - \beta_2 \bar{x_2} - \beta_3 \bar{x_3} - \beta_4 \bar{x_4} - \beta_5 \bar{x_5} \\
+				\beta_1 = \frac{\sum_{i=1}^n (x_{1_i} - \bar{x_1}) (y_i - \bar{y})}{\sum_{i=1}^n (x_{1_i} - \bar{x_1})^2}             \\
+				\beta_2 = \frac{\sum_{i=1}^n (x_{2_i} - \bar{x_2}) (y_i - \bar{y})}{\sum_{i=1}^n (x_{2_i} - \bar{x_2})^2}             \\
+				\beta_3 = \frac{\sum_{i=1}^n (x_{3_i} - \bar{x_3}) (y_i - \bar{y})}{\sum_{i=1}^n (x_{3_i} - \bar{x_3})^2}             \\
+				\beta_4 = \frac{\sum_{i=1}^n (x_{4_i} - \bar{x_4}) (y_i - \bar{y})}{\sum_{i=1}^n (x_{4_i} - \bar{x_4})^2}             \\
+				\beta_5 = \frac{\sum_{i=1}^n (x_{5_i} - \bar{x_5}) (y_i - \bar{y})}{\sum_{i=1}^n (x_{5_i} - \bar{x_5})^2}             \\
+			\end{cases}
+		\end{equation}
+		其中$\bar{y}$、$\bar{x_1}$、$\bar{x_2}$、$\bar{x_3}$、$\bar{x_4}$、$\bar{x_5}$分别代表
+		降水量的均值、云层覆盖的均值、湿度的均值、气温的均值、气压的均值、风速的均值.
+		最小二乘法的求解结果如下所示：
+		% \begin{align}
+		% 	\notag
+		% 	r & =6.264621458073717c+0.23936949821555784h+0.18358187666124123t \\
+		% 	\notag
+		% 	  & \qquad -0.004092803931093655p+0.23939598907957882f
+		% \end{align}
+		\begin{equation}
+			\begin{cases}
+				\beta_0 = 0.                    \\
+				\beta_1 = 6.264621458073717     \\
+				\beta_2 = 0.23936949821555784   \\
+				\beta_3 = 0.18358187666124123   \\
+				\beta_4 = -0.004092803931093655 \\
+				\beta_5 = 0.23939598907957882   \\
+			\end{cases}
+		\end{equation}
 	\end{block}
 \end{frame}
 
