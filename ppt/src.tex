@@ -274,7 +274,8 @@
 	\begin{block}{模型假设}
 		\begin{itemize}
 			\item 降水量与气温、气压、风速、湿度、云层覆盖之间存在线性关系.
-			\item 线性关系中的截距项为$0$.
+			\item 线性关系式导致的误差可忽略.
+			      % \item 线性关系中的截距项为$0$.
 		\end{itemize}
 	\end{block}
 
@@ -315,7 +316,7 @@
 
 \begin{frame}
 	\frametitle{最小二乘法结果}
-	\begin{block}{最小二乘法结果}
+	\begin{block}{结果展示}
 		最小二乘法的求解结果如下所示：
 		% \begin{align}
 		% 	\notag
@@ -333,6 +334,14 @@
 				\beta_5 = 0.17773547386441546
 			\end{cases}
 		\end{equation}
+	\end{block}
+	\begin{block}{模型误差}
+		最小二乘法的拟合图像如下所示:
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[scale=0.3]{fit2.png}
+			\caption{拟合降水量和真实降水量的折线统计图}
+		\end{figure}
 	\end{block}
 \end{frame}
 
