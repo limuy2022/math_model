@@ -28,8 +28,10 @@
 \headcommand {\beamer@subsectionentry {0}{2}{2}{10}{神经网络}}
 \headcommand {\slideentry {2}{2}{1}{10/10}{神经网络}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@partpages {1}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\beamer@sectionpages {6}{10}}
-\headcommand {\beamer@documentpages {10}}
-\headcommand {\gdef \inserttotalframenumber {10}}
+\headcommand {\slideentry {2}{2}{2}{11/11}{神经网络}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@partpages {1}{11}}
+\headcommand {\beamer@subsectionpages {10}{11}}
+\headcommand {\beamer@sectionpages {6}{11}}
+\headcommand {\beamer@documentpages {11}}
+\headcommand {\gdef \inserttotalframenumber {11}}
