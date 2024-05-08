@@ -40,13 +40,13 @@ def get_rate1(res, data_without_first_column, y_data):
     return cnt / len(y_data)
 
 
-def draw(X_data, actual, fit):
+def draw(X_data, actual, fit, file_name):
     plt.plot(X_data, fit, label="Fitted")
     plt.plot(X_data, actual, label="Actual", color="red")
     plt.legend()
     plt.xlabel("x")
     plt.ylabel("y")
-    plt.show()
+    plt.savefig(file_name)
 
 
 def main():
@@ -77,7 +77,7 @@ def main():
     print(
         [str(i) for i in res.params],
     )
-    draw(range(len(test_x)), test_y, res.predict(test_x))
+    draw(range(len(test_x)), test_y, res.predict(test_x), "ols_two.png")
     # print(res.summary())
 
 

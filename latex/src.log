@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  8 MAY 2024 14:54
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  8 MAY 2024 15:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -812,8 +812,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [2]
-File: fit1.png Graphic file (type bmp)
-<fit1.png>
+File: ../src/try_match/ols_two.png Graphic file (type bmp)
+<../src/try_match/ols_two.png>
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -827,8 +827,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
 [3]
-File: fit2.png Graphic file (type bmp)
-<fit2.png>
+File: ../src/try_match/ols_five.png Graphic file (type bmp)
+<../src/try_match/ols_five.png>
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -843,9 +843,6 @@ File: success.png Graphic file (type bmp)
 <success.png>
 File: very_success.png Graphic file (type bmp)
 <very_success.png>
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1189,14 +1186,17 @@ L3 programming layer <2022/08/05>
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `src.out' has not changed.
 (rerunfilecheck)             Checksum: AEF43E7A0BE98CD25891286D975D35E5;2363.
  ) 
 Here is how much of TeX's memory you used:
- 23145 strings out of 474878
- 525777 string characters out of 5762517
- 2501627 words of memory out of 5000000
- 44918 multiletter control sequences out of 15000+600000
+ 23122 strings out of 474878
+ 524241 string characters out of 5762517
+ 2313627 words of memory out of 5000000
+ 44894 multiletter control sequences out of 15000+600000
  566498 words of font info for 96 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,12n,97p,1189b,2206s stack positions out of 10000i,1000n,20000p,200000b,200000s
