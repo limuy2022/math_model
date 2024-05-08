@@ -66,6 +66,7 @@ def main():
     data_without_first_column = data_numpy[:, 1:]
     print(data_without_first_column)
     # 创建线性回归模型
+    data_without_first_column = sm.add_constant(data_without_first_column)
     model = sm.OLS(y_data, data_without_first_column)
     res = model.fit()
 
