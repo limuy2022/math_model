@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  8 MAY 2024 17:53
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  8 MAY 2024 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1610,6 +1610,11 @@ File: ../src/try_match/ols_five.png Graphic file (type bmp)
 ] [10
 
 ]
+File: ../latex/success.png Graphic file (type bmp)
+<../latex/success.png>
+ [11
+
+]
 \tf@nav=\write6
 \openout6 = `src.nav'.
 
@@ -1632,12 +1637,12 @@ Package rerunfilecheck Info: File `src.out' has not changed.
 (rerunfilecheck)             Checksum: ABC09F92A8507279FE7645DC7DC79EFC;385.
  ) 
 Here is how much of TeX's memory you used:
- 38096 strings out of 474878
- 867853 string characters out of 5762517
- 1951627 words of memory out of 5000000
- 59465 multiletter control sequences out of 15000+600000
+ 38114 strings out of 474878
+ 868365 string characters out of 5762517
+ 1952627 words of memory out of 5000000
+ 59481 multiletter control sequences out of 15000+600000
  561954 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,482b,989s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on src.pdf (10 pages).
+Output written on src.pdf (11 pages).
