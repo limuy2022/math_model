@@ -1,12 +1,13 @@
 import random
+
 import numpy
+import numpy as np
 import pandas as pd
 import statsmodels.api as sm
-import numpy as np
 from matplotlib import pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.tree import export_text, DecisionTreeRegressor
 from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeRegressor, export_text
 
 
 def gen_data():
