@@ -2,3 +2,4 @@
 \beamer@sectionintoc {2}{模型尝试}{6}{0}{2}
 \beamer@subsectionintoc {2}{1}{线性回归模型}{7}{0}{2}
 \beamer@subsectionintoc {2}{2}{神经网络}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{决策树}{12}{0}{2}

@@ -394,6 +394,18 @@
 		划分为若干个子集，每个子集都是一个独立的决策树. 通过递归地构造
 		决策树，可以得到一颗最优的决策树.
 	\end{block}
+
+	\begin{block}{CART算法基本原理}
+		\begin{itemize}
+			\item 每个节点都具有一个决策规则.
+			\item 每一层根据不同标签(即自变量)计算基尼指数,公式如下:
+			      \begin{equation}
+				      Gini(D) = 1-\sum_{i=1}^{n}{{p(x_i)}^2}
+			      \end{equation}
+			      其中,$p(x_i)$是$D$中各个类别的样本数占总样本数的比例.
+			\item 根据基尼指数的大小，决策树会选择具有最小基尼指数的节点.
+		\end{itemize}
+	\end{block}
 \end{frame}
 
 
