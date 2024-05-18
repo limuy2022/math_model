@@ -1,3 +1,0 @@
-{
-    ["/home/omo/文档/code_space/cpp_code/math_model/data_solution"] = "240501"
-}

@@ -1,7 +1,0 @@
-{
-    errdata = "\27[01m\27[Ksrc/train_main.cpp:\27[m\27[K In member function ‘\27[01m\27[Kf64 Creature<Chromosome>::\27[01;32m\27[KgetValue\27[m\27[K() const\27[m\27[K’:\
-\27[01m\27[Ksrc/train_main.cpp:31:66:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[K在有返回值的函数中未发现 return 语句 [\27[01;35m\27[K-Wreturn-type\27[m\27[K]\
-   31 |     f64 getValue() const { auto result = changeNum(chromosomes); \27[01;35m\27[K}\27[m\27[K\
-      |                                                                  \27[01;35m\27[K^\27[m\27[K\
-"
-}
