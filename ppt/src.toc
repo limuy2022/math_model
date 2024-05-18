@@ -3,7 +3,7 @@
 \beamer@subsectionintoc {2}{1}{线性回归模型}{7}{0}{2}
 \beamer@subsectionintoc {2}{2}{神经网络}{10}{0}{2}
 \beamer@subsectionintoc {2}{3}{决策树}{13}{0}{2}
-\beamer@sectionintoc {3}{模型的优缺点与改进方法}{16}{0}{3}
-\beamer@subsectionintoc {3}{1}{线性回归模型}{17}{0}{3}
-\beamer@subsectionintoc {3}{2}{神经网络回归模型}{18}{0}{3}
-\beamer@subsectionintoc {3}{3}{决策树模型}{19}{0}{3}
+\beamer@sectionintoc {3}{模型的优缺点与改进方法}{17}{0}{3}
+\beamer@subsectionintoc {3}{1}{线性回归模型}{18}{0}{3}
+\beamer@subsectionintoc {3}{2}{神经网络回归模型}{19}{0}{3}
+\beamer@subsectionintoc {3}{3}{决策树模型}{20}{0}{3}
