@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.4.29)  18 MAY 2024 13:58
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024/Arch Linux) (preloaded format=xelatex 2024.4.29)  18 MAY 2024 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1494,21 +1494,29 @@ File: ../latex/success.png Graphic file (type bmp)
 
 ] [12
 
+] [13
+
+]
+[14
+
 ]
 File: ../latex/very_success.png Graphic file (type bmp)
 <../latex/very_success.png>
- [13
 
-]
-(./src.toc) [14
+Overfull \vbox (7.85623pt too high) detected at line 461
+ []
 
-] [15
+[15
 
-] [16
+] (./src.toc) [16
 
 ] [17
 
 ] [18
+
+] [19
+
+] [20
 
 ]
 \tf@nav=\write6
@@ -1530,15 +1538,15 @@ L3 programming layer <2022/07/14>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `src.out' has not changed.
-(rerunfilecheck)             Checksum: 1C0E1ED1322398640C47FF893F70FB9F;924.
+(rerunfilecheck)             Checksum: DA14FD5513458090CDB1B74598A2C9DE;924.
  ) 
 Here is how much of TeX's memory you used:
- 38257 strings out of 476761
- 869209 string characters out of 5802895
- 1957839 words of memory out of 5000000
- 59590 multiletter control sequences out of 15000+600000
+ 38303 strings out of 476761
+ 871087 string characters out of 5802895
+ 1958839 words of memory out of 5000000
+ 59636 multiletter control sequences out of 15000+600000
  561954 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  128i,20n,123p,482b,989s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on src.pdf (18 pages).
+Output written on src.pdf (20 pages).
