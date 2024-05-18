@@ -1,0 +1,41 @@
+{
+    errdata = "\27[01m\27[Ksrc/train_main.cpp:\27[m\27[K In constructor ‘\27[01m\27[KChromosome::\27[01;32m\27[KChromosome\27[m\27[K(f64, std::byte)\27[m\27[K’:\
+\27[01m\27[Ksrc/train_main.cpp:114:9:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[K‘\27[01m\27[KChromosome::dominance\27[m\27[K’ will be initialized after [\27[01;35m\27[K-Wreorder\27[m\27[K]\
+  114 |     f64 \27[01;35m\27[Kdominance\27[m\27[K{};\
+      |         \27[01;35m\27[K^~~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:113:15:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[K  ‘\27[01m\27[Kstd::byte Chromosome::value\27[m\27[K’ [\27[01;35m\27[K-Wreorder\27[m\27[K]\
+  113 |     std::byte \27[01;35m\27[Kvalue\27[m\27[K{};\
+      |               \27[01;35m\27[K^~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:117:5:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[K在此处初始化后被初始化 [\27[01;35m\27[K-Wreorder\27[m\27[K]\
+  117 |     \27[01;35m\27[KChromosome\27[m\27[K(f64 dominance, std::byte value)\
+      |     \27[01;35m\27[K^~~~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:\27[m\27[K In function ‘\27[01m\27[Kstd::ofstream&\27[01;32m\27[K operator<<\27[m\27[K(std::ofstream&, const Chromosome&)\27[m\27[K’:\
+\27[01m\27[Ksrc/train_main.cpp:145:13:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[KISO C++ 认为有歧义，尽管第一个备选的最差类型转换要好于第二个备选的最差类型转换：\
+  145 |     file << \27[01;35m\27[K1\27[m\27[K;\
+      |             \27[01;35m\27[K^\27[m\27[K\
+In file included from \27[01m\27[K/usr/include/c++/13.2.1/ostream:880\27[m\27[K,\
+                 from \27[01m\27[K/usr/include/c++/13.2.1/istream:41\27[m\27[K,\
+                 from \27[01m\27[K/usr/include/c++/13.2.1/sstream:40\27[m\27[K,\
+                 from \27[01m\27[K/usr/include/c++/13.2.1/bits/quoted_string.h:38\27[m\27[K,\
+                 from \27[01m\27[K/usr/include/c++/13.2.1/iomanip:47\27[m\27[K,\
+                 from \27[01m\27[K/usr/include/c++/13.2.1/bits/fs_path.h:38\27[m\27[K,\
+                 from \27[01m\27[K/usr/include/c++/13.2.1/filesystem:49\27[m\27[K,\
+                 from \27[01m\27[Ksrc/train_main.cpp:5\27[m\27[K:\
+\27[01m\27[K/usr/include/c++/13.2.1/bits/ostream.tcc:110:5:\27[m\27[K \27[01;36m\27[K附注：\27[m\27[K备选 1： ‘\27[01m\27[Kstd::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::\27[01;32m\27[Koperator<<\27[m\27[K(int) \27[35m\27[K[with _CharT = char; _Traits = std::char_traits<char>]\27[m\27[K\27[m\27[K’\
+  110 |     \27[01;36m\27[Kbasic_ostream<_CharT, _Traits>\27[m\27[K::\
+      |     \27[01;36m\27[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:142:16:\27[m\27[K \27[01;36m\27[K附注：\27[m\27[K备选 2： ‘\27[01m\27[Kstd::ofstream&\27[01;32m\27[K operator<<\27[m\27[K(std::ofstream&, const Chromosome&)\27[m\27[K’\
+  142 | std::ofstream &\27[01;36m\27[Koperator\27[m\27[K<<(std::ofstream &file, Chromosome const &chromosomes) {\
+      |                \27[01;36m\27[K^~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:142:66:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kunused parameter ‘\27[01m\27[Kchromosomes\27[m\27[K’ [\27[01;35m\27[K-Wunused-parameter\27[m\27[K]\
+  142 | std::ofstream &operator<<(std::ofstream &file, \27[01;35m\27[KChromosome const &chromosomes\27[m\27[K) {\
+      |                                                \27[01;35m\27[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:\27[m\27[K In function ‘\27[01m\27[Kstd::ifstream&\27[01;32m\27[K operator>>\27[m\27[K(std::ifstream&, Chromosome&)\27[m\27[K’:\
+\27[01m\27[Ksrc/train_main.cpp:150:13:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kunused variable ‘\27[01m\27[KinputByte\27[m\27[K’ [\27[01;35m\27[K-Wunused-variable\27[m\27[K]\
+  150 |     int16_t \27[01;35m\27[KinputByte\27[m\27[K{};\
+      |             \27[01;35m\27[K^~~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:149:60:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kunused parameter ‘\27[01m\27[Kchromosome\27[m\27[K’ [\27[01;35m\27[K-Wunused-parameter\27[m\27[K]\
+  149 | std::ifstream &operator>>(std::ifstream &file, \27[01;35m\27[KChromosome &chromosome\27[m\27[K) {\
+      |                                                \27[01;35m\27[K~~~~~~~~~~~~^~~~~~~~~~\27[m\27[K\
+"
+}

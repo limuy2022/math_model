@@ -1,0 +1,53 @@
+{
+    errdata = "\27[01m\27[Ksrc/train_main.cpp:21:74:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[K友元声明‘\27[01m\27[Kstd::ifstream&\27[01;32m\27[K operator>>\27[m\27[K(std::ifstream&, std::vector<_RealType>&)\27[m\27[K’声明了一个非模板函数 [\27[01;35m\27[K-Wnon-template-friend\27[m\27[K]\
+   21 |                                      std::vector<Chromosome> &chromosomes\27[01;35m\27[K)\27[m\27[K;\
+      |                                                                          \27[01;35m\27[K^\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:21:74:\27[m\27[K \27[01;36m\27[K附注：\27[m\27[K(if this is not what you intended, make sure the function template has already been declared and add ‘\27[01m\27[K<>\27[m\27[K’ after the function name here)\
+\27[01m\27[Ksrc/train_main.cpp:23:72:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[K友元声明‘\27[01m\27[Kstd::ofstream&\27[01;32m\27[K operator<<\27[m\27[K(std::ofstream&, const std::vector<_RealType>&)\27[m\27[K’声明了一个非模板函数 [\27[01;35m\27[K-Wnon-template-friend\27[m\27[K]\
+   23 |         std::ofstream &file, std::vector<Chromosome> const &chromosomes\27[01;35m\27[K)\27[m\27[K;\
+      |                                                                        \27[01;35m\27[K^\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:\27[m\27[K In constructor ‘\27[01m\27[KGeneticAlgorithm::\27[01;32m\27[KGeneticAlgorithm\27[m\27[K(usize)\27[m\27[K’:\
+\27[01m\27[Ksrc/train_main.cpp:371:14:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[K‘\27[01m\27[KGeneticAlgorithm::creatures\27[m\27[K’应该在成员初始化列表中被初始化 [\27[01;35m\27[K-Weffc++\27[m\27[K]\
+  371 |     explicit \27[01;35m\27[KGeneticAlgorithm\27[m\27[K(usize initialCreatureNum) {\
+      |              \27[01;35m\27[K^~~~~~~~~~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:371:14:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[K‘\27[01m\27[KGeneticAlgorithm::creaturesP\27[m\27[K’应该在成员初始化列表中被初始化 [\27[01;35m\27[K-Weffc++\27[m\27[K]\
+\27[01m\27[Ksrc/train_main.cpp:\27[m\27[K In member function ‘\27[01m\27[Kstd::vector<Creature<Chromosome> > GeneticAlgorithm::\27[01;32m\27[KselectSon\27[m\27[K()\27[m\27[K’:\
+\27[01m\27[Ksrc/train_main.cpp:409:28:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kcomparison of integer expressions of different signedness: ‘\27[01m\27[Ki32\27[m\27[K’ {aka ‘\27[01m\27[Kint\27[m\27[K’} and ‘\27[01m\27[Kstd::vector<Creature<Chromosome> >::size_type\27[m\27[K’ {aka ‘\27[01m\27[Klong unsigned int\27[m\27[K’} [\27[01;35m\27[K-Wsign-compare\27[m\27[K]\
+  409 |         for (i32 _i{1}; \27[01;35m\27[K_i <= creatures.size()\27[m\27[K; ++_i) {\
+      |                         \27[01;35m\27[K~~~^~~~~~~~~~~~~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:413:27:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kcomparison of integer expressions of different signedness: ‘\27[01m\27[Ki32\27[m\27[K’ {aka ‘\27[01m\27[Kint\27[m\27[K’} and ‘\27[01m\27[Kstd::vector<Creature<Chromosome> >::size_type\27[m\27[K’ {aka ‘\27[01m\27[Klong unsigned int\27[m\27[K’} [\27[01;35m\27[K-Wsign-compare\27[m\27[K]\
+  413 |                 if (\27[01;35m\27[KnowID == creatures.size()\27[m\27[K) {\
+      |                     \27[01;35m\27[K~~~~~~^~~~~~~~~~~~~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:420:27:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kcomparison of integer expressions of different signedness: ‘\27[01m\27[Ki32\27[m\27[K’ {aka ‘\27[01m\27[Kint\27[m\27[K’} and ‘\27[01m\27[Kstd::vector<Creature<Chromosome> >::size_type\27[m\27[K’ {aka ‘\27[01m\27[Klong unsigned int\27[m\27[K’} [\27[01;35m\27[K-Wsign-compare\27[m\27[K]\
+  420 |                 if (\27[01;35m\27[KnowID == creatures.size()\27[m\27[K) {\
+      |                     \27[01;35m\27[K~~~~~~^~~~~~~~~~~~~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:\27[m\27[K In constructor ‘\27[01m\27[Kconstexpr Creature<Chromosome>::\27[01;32m\27[KCreature\27[m\27[K() \27[35m\27[K[with Chromosome = Chromosome]\27[m\27[K\27[m\27[K’:\
+\27[01m\27[Ksrc/train_main.cpp:32:5:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[K‘\27[01m\27[KCreature<Chromosome>::chromosomes\27[m\27[K’应该在成员初始化列表中被初始化 [\27[01;35m\27[K-Weffc++\27[m\27[K]\
+   32 |     \27[01;35m\27[KCreature\27[m\27[K() = default;\
+      |     \27[01;35m\27[K^~~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:\27[m\27[K In member function ‘\27[01m\27[Kstd::vector<Creature<Chromosome> > GeneticAlgorithm::\27[01;32m\27[KselectSon\27[m\27[K()\27[m\27[K’:\
+\27[01m\27[Ksrc/train_main.cpp:427:32:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kcomparison of integer expressions of different signedness: ‘\27[01m\27[Ki32\27[m\27[K’ {aka ‘\27[01m\27[Kint\27[m\27[K’} and ‘\27[01m\27[Kstd::vector<Chromosome, std::allocator<Chromosome> >::size_type\27[m\27[K’ {aka ‘\27[01m\27[Klong unsigned int\27[m\27[K’} [\27[01;35m\27[K-Wsign-compare\27[m\27[K]\
+  427 |             for (i32 _j{1}; \27[01;35m\27[K_j <= creatures[0].chromosomes.size()\27[m\27[K; ++_j) {\
+      |                             \27[01;35m\27[K~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\27[m\27[K\
+src/train_main.cpp: In instantiation of ‘\27[01m\27[Kvoid Creature<Chromosome>::\27[01;32m\27[KcalFitness\27[m\27[K() \27[35m\27[K[with Chromosome = Chromosome]\27[m\27[K\27[m\27[K’:\
+\27[01m\27[Ksrc/train_main.cpp:388:46:\27[m\27[K   required from here\
+\27[01m\27[Ksrc/train_main.cpp:118:28:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kcomparison of integer expressions of different signedness: ‘\27[01m\27[Ki32\27[m\27[K’ {aka ‘\27[01m\27[Kint\27[m\27[K’} and ‘\27[01m\27[Kconst usize\27[m\27[K’ {aka ‘\27[01m\27[Kconst long unsigned int\27[m\27[K’} [\27[01;35m\27[K-Wsign-compare\27[m\27[K]\
+  118 |         for (i32 _i{1}; \27[01;35m\27[K_i <= mid1\27[m\27[K; ++_i) {\
+      |                         \27[01;35m\27[K~~~^~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:125:28:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kcomparison of integer expressions of different signedness: ‘\27[01m\27[Ki32\27[m\27[K’ {aka ‘\27[01m\27[Kint\27[m\27[K’} and ‘\27[01m\27[Kconst usize\27[m\27[K’ {aka ‘\27[01m\27[Kconst long unsigned int\27[m\27[K’} [\27[01;35m\27[K-Wsign-compare\27[m\27[K]\
+  125 |         for (i32 _i{1}; \27[01;35m\27[K_i <= mid1\27[m\27[K; ++_i) {\
+      |                         \27[01;35m\27[K~~~^~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:130:28:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kcomparison of integer expressions of different signedness: ‘\27[01m\27[Ki32\27[m\27[K’ {aka ‘\27[01m\27[Kint\27[m\27[K’} and ‘\27[01m\27[Kconst usize\27[m\27[K’ {aka ‘\27[01m\27[Kconst long unsigned int\27[m\27[K’} [\27[01;35m\27[K-Wsign-compare\27[m\27[K]\
+  130 |         for (i32 _i{1}; \27[01;35m\27[K_i <= mid2\27[m\27[K; ++_i) {\
+      |                         \27[01;35m\27[K~~~^~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:131:32:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kcomparison of integer expressions of different signedness: ‘\27[01m\27[Ki32\27[m\27[K’ {aka ‘\27[01m\27[Kint\27[m\27[K’} and ‘\27[01m\27[Kconst usize\27[m\27[K’ {aka ‘\27[01m\27[Kconst long unsigned int\27[m\27[K’} [\27[01;35m\27[K-Wsign-compare\27[m\27[K]\
+  131 |             for (i32 _j{1}; \27[01;35m\27[K_j <= mid1\27[m\27[K; ++_j) {\
+      |                             \27[01;35m\27[K~~~^~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:137:28:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kcomparison of integer expressions of different signedness: ‘\27[01m\27[Ki32\27[m\27[K’ {aka ‘\27[01m\27[Kint\27[m\27[K’} and ‘\27[01m\27[Kconst usize\27[m\27[K’ {aka ‘\27[01m\27[Kconst long unsigned int\27[m\27[K’} [\27[01;35m\27[K-Wsign-compare\27[m\27[K]\
+  137 |         for (i32 _i{1}; \27[01;35m\27[K_i <= mid2\27[m\27[K; ++_i) {\
+      |                         \27[01;35m\27[K~~~^~~~~~~\27[m\27[K\
+\27[01m\27[Ksrc/train_main.cpp:143:32:\27[m\27[K \27[01;35m\27[K警告：\27[m\27[Kcomparison of integer expressions of different signedness: ‘\27[01m\27[Ki32\27[m\27[K’ {aka ‘\27[01m\27[Kint\27[m\27[K’} and ‘\27[01m\27[Kconst usize\27[m\27[K’ {aka ‘\27[01m\27[Kconst long unsigned int\27[m\27[K’} [\27[01;35m\27[K-Wsign-compare\27[m\27[K]\
+  143 |             for (i32 _j{1}; \27[01;35m\27[K_j <= mid2\27[m\27[K; ++_j) {\
+      |                             \27[01;35m\27[K~~~^~~~~~~\27[m\27[K\
+"
+}

@@ -1,0 +1,10 @@
+libdir=/home/omo/文档/code_space/cpp_code/math_model/data_solution/build/.packages/g/googletest/latest/4e0143c97b65425b855ad5fd03038b6a/lib
+includedir=/home/omo/文档/code_space/cpp_code/math_model/data_solution/build/.packages/g/googletest/latest/4e0143c97b65425b855ad5fd03038b6a/include
+
+Name: gtest_main
+Description: GoogleTest (with main() function)
+Version: 1.14.0
+URL: https://github.com/google/googletest
+Requires: gtest = 1.14.0
+Libs: -L${libdir} -lgtest_main 
+Cflags: -I${includedir} -DGTEST_HAS_PTHREAD=1

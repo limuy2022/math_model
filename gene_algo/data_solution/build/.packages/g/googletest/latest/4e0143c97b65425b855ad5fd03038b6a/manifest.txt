@@ -1,0 +1,22 @@
+{
+    arch = "x86_64",
+    artifacts = {
+        installdir = "/home/omo/文档/code_space/cpp_code/math_model/data_solution/build/.packages/g/googletest/latest/4e0143c97b65425b855ad5fd03038b6a"
+    },
+    configs = {
+        debug = false,
+        pic = true,
+        shared = false
+    },
+    deps = { },
+    envs = {
+        LD_LIBRARY_PATH = {
+            "lib"
+        }
+    },
+    librarydeps = { },
+    mode = "release",
+    name = "googletest",
+    plat = "linux",
+    version = "latest"
+}
