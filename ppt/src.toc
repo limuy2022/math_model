@@ -10,4 +10,5 @@
 \beamer@subsectionintoc {4}{1}{线性回归模型}{25}{0}{4}
 \beamer@subsectionintoc {4}{2}{神经网络回归模型}{26}{0}{4}
 \beamer@subsectionintoc {4}{3}{决策树模型}{27}{0}{4}
-\beamer@sectionintoc {5}{总结}{28}{0}{5}
+\beamer@sectionintoc {5}{模型检验}{28}{0}{5}
+\beamer@sectionintoc {6}{总结}{30}{0}{6}
