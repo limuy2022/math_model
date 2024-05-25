@@ -1,5 +1,7 @@
 \beamer@sectionintoc {1}{研究背景与前提假设}{3}{0}{1}
 \beamer@sectionintoc {2}{研究思路}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{获取数据}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{构建模型}{11}{0}{2}
 \beamer@sectionintoc {3}{模型尝试}{12}{0}{3}
 \beamer@subsectionintoc {3}{1}{线性回归模型}{13}{0}{3}
 \beamer@subsectionintoc {3}{2}{神经网络}{16}{0}{3}
