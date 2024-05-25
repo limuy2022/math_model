@@ -131,7 +131,7 @@
 \title[]{ {\Large 基于决策树模型和神经网络模型的降雨量问题研究 }}
 %\subtitle{一个简短的故事}
 %作者
-\author{李牧阳 \and 钟绍恒 \and 易领程}
+\author{李沐阳 \and 钟绍恒 \and 易领程}
 %作者详情
 \institute[VFU] {}
 
@@ -212,8 +212,8 @@
 		      % \item[发表平台:]  AAAI
 		      % \item[平台等级:]  CCF A
 	\end{description}
-
 \end{frame}
+
 
 \section{研究背景与前提假设}
 \begin{frame}
@@ -254,13 +254,79 @@
 			\item 根据气象学的要求，定义降水量预测结果准确的标准为：得出的降水量$r$和正确的降水量$r_0$满足关系$r_0 - 10 \le r \le r_0 + 10$.
 		\end{itemize}
 	\end{block}
-	\begin{block}{数据整理方法}
-		欧洲气候以温带海洋性气候为主，整体降水量变化较为缓和，极端数据较少
+\end{frame}
 
-		因此，采用欧洲降水为研究对象更有利于进行模型构建的研究
+\section{研究思路}
 
-		使用python的pandas从欧洲某气象网站获取的大量数据中进行初步的数据整理，将数据按照$30$天一组进行平均
+% \begin{frame}
+% \frametitle{搜集数据及数据整理}
+%
+% \begin{block}{数据网站}
+% 我们通过github上的awesome-dataset项目，找到了如下的欧洲气候网站，并从中获取到了降雨量、
+% % 气温、气压、风速、湿度和云层覆盖的数据.
+% % \url{https://climatedataapi.ecmwf.int/data/}
+% \end{blcok}
+% \begin{block}{数据整理方法}
+% 	为了选取完整、连续、准确的数据，我们抛弃了最近的以及最早的数据，只选取了1877-2000年的
+% 	数据进行分析.因为以天为单位的数据方差过大,我们决定将数据以一个月为单位取平均值,
+% 	使用的工具为python的pandas.
+% \end{block}
+% \end{frame}
+
+\begin{frame}
+	\frametitle{搜集数据及数据整理}
+	\begin{block}{数据网站}
+		我们通过github上的awesome-dataset项目，找到了如下的欧洲气候网站，并从中获取到了降雨量、
+		气温、气压、风速、湿度和云层覆盖的数据.
 	\end{block}
+	\begin{block}{数据整理方法}
+		为了选取完整、连续、准确的数据，我们抛弃了最近的以及最早的数据，只选取了1877-2000年的
+		数据进行分析.因为以天为单位的数据方差过大,我们决定将数据以一个月为单位取平均值,
+		使用的工具为python的pandas.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{数据可视化}
+	\begin{block}{数据折线图}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[scale=0.21]{../src/prepare_data/pp.png}
+			\caption{气压数据折线图}
+		\end{figure}
+
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[scale=0.21]{../src/prepare_data/cc.png}
+			\caption{云层覆盖数据折线图}
+		\end{figure}
+
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[scale=0.21]{../src/prepare_data/tg.png}
+			\caption{气温数据折线图}
+		\end{figure}
+
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[scale=0.21]{../src/prepare_data/fg.png}
+			\caption{风速数据折线图}
+		\end{figure}
+
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[scale=0.21]{../src/prepare_data/rr.png}
+			\caption{降雨量数据折线图}
+		\end{figure}
+
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[scale=0.21]{../src/prepare_data/hu.png}
+			\caption{湿度数据折线图}
+		\end{figure}
+
+	\end{block}
+
 \end{frame}
 
 \section{模型尝试}
@@ -271,7 +337,6 @@
 	\begin{block}{研究方法}
 		观察数据发现，降水量与气温、气压、风速、湿度、云层覆盖之间可能存在线性关系.
 		尝试对该问题建立多元线性回归模型.
-
 		考虑到拟合线性关系, 我们决定采用较为常见的最小二乘法进行模型拟合.
 		为了方便起见，我们使用了python的statsmodels库
 	\end{block}
@@ -527,21 +592,18 @@
 	\end{block}
 \end{frame}
 
+\section{总结}
 \begin{frame}
 	\frametitle{意义}
-	我们今天在这里仅仅是抛砖引玉
-
-	展现了神经网络以及决策树在该问题下蕴藏的巨大潜力
-
-	在全球气候越来越极端、环境越来越恶化的情形下
-
-	研究气候因素之间的关系尤为重要
-
-	可以为我们寻求可持续发展道路指明方向，照亮未来
-
-	我们学习数学建模不仅仅是学习一门科学
-
-	更是让我们新时代青年为新时代贡献力量
+	\begin{block}{研究价值}
+		我们今天在这里仅仅是抛砖引玉,
+		展现了神经网络以及决策树在该问题下蕴藏的巨大潜力.
+		在全球气候越来越极端、环境越来越恶化的情形下,
+		研究气候因素之间的关系尤为重要.
+		可以为我们寻求可持续发展道路指明方向，照亮未来.
+		我们学习数学建模不仅仅是学习一门科学,
+		更是让我们新时代青年为新时代贡献力量.
+	\end{block}
 \end{frame}
 
 \begin{frame}
