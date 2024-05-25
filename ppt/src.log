@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  25 MAY 2024 12:07
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  25 MAY 2024 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1604,15 +1604,11 @@ File: ../src/prepare_data/pp.png Graphic file (type bmp)
 <../src/prepare_data/pp.png>
 File: ../src/prepare_data/cc.png Graphic file (type bmp)
 <../src/prepare_data/cc.png>
-File: ../src/prepare_data/tg.png Graphic file (type bmp)
-<../src/prepare_data/tg.png>
-
-Overfull \vbox (38.97664pt too high) detected at line 310
- []
-
-[8
+ [8
 
 ]
+File: ../src/prepare_data/tg.png Graphic file (type bmp)
+<../src/prepare_data/tg.png>
 File: ../src/prepare_data/fg.png Graphic file (type bmp)
 <../src/prepare_data/fg.png>
 File: ../src/prepare_data/rr.png Graphic file (type bmp)
@@ -1620,58 +1616,60 @@ File: ../src/prepare_data/rr.png Graphic file (type bmp)
 File: ../src/prepare_data/hu.png Graphic file (type bmp)
 <../src/prepare_data/hu.png>
 
-Overfull \vbox (38.97664pt too high) detected at line 334
+Overfull \vbox (146.82709pt too high) detected at line 334
  []
 
 [9
 
-] (./src.toc) [10
+] [10
 
-] [11
+] (./src.toc) [11
 
 ] [12
+
+] [13
 
 ]
 File: ../src/try_match/ols_five.png Graphic file (type bmp)
 <../src/try_match/ols_five.png>
- [13
-
-] [14
+ [14
 
 ] [15
+
+] [16
 
 ]
 File: ../latex/success.png Graphic file (type bmp)
 <../latex/success.png>
- [16
-
-] [17
+ [17
 
 ] [18
 
 ] [19
 
+] [20
+
 ]
 File: ../latex/very_success.png Graphic file (type bmp)
 <../latex/very_success.png>
- [20
-
-] [21
+ [21
 
 ]
-(./src.toc) [22
+[22
 
-] [23
+] (./src.toc) [23
 
 ] [24
 
 ] [25
 
-] (./src.toc) [26
+] [26
 
-] [27
+] (./src.toc) [27
 
 ] [28
+
+] [29
 
 ]
 \tf@nav=\write6
@@ -1693,15 +1691,15 @@ L3 programming layer <2022/07/14>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `src.out' has not changed.
-(rerunfilecheck)             Checksum: 7A4A4D9B0CFD7974F2CF8C1268B0AF04;1061.
+(rerunfilecheck)             Checksum: 5BB7BF77A6F7DC9B12C0EA9268002E9F;1061.
  ) 
 Here is how much of TeX's memory you used:
- 38335 strings out of 474878
- 875483 string characters out of 5762517
- 1960627 words of memory out of 5000000
- 59689 multiletter control sequences out of 15000+600000
- 561954 words of font info for 70 fonts, out of 8000000 for 9000
+ 38354 strings out of 474878
+ 876186 string characters out of 5762517
+ 1961627 words of memory out of 5000000
+ 59706 multiletter control sequences out of 15000+600000
+ 561970 words of font info for 72 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,482b,989s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on src.pdf (28 pages).
+Output written on src.pdf (29 pages).

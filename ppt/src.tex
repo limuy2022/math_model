@@ -128,7 +128,7 @@
 
 
 %	标题页
-\title[]{ {\Large 基于决策树模型和神经网络模型的降雨量问题研究 }}
+\title[]{ {\Large 基于决策树模型和神经网络模型的降雨量问题研究 \\ \large 三号作品 }}
 %\subtitle{一个简短的故事}
 %作者
 \author{李沐阳 \and 钟绍恒 \and 易领程}
@@ -300,18 +300,18 @@
 			\includegraphics[scale=0.21]{../src/prepare_data/cc.png}
 			\caption{云层覆盖数据折线图}
 		\end{figure}
-
-		\begin{figure}[h!]
-			\centering
-			\includegraphics[scale=0.21]{../src/prepare_data/tg.png}
-			\caption{气温数据折线图}
-		\end{figure}
 	\end{block}
 \end{frame}
 
 \begin{frame}
 	\frametitle{数据可视化}
 	\begin{block}{数据折线图}
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[scale=0.21]{../src/prepare_data/tg.png}
+			\caption{气温数据折线图}
+		\end{figure}
+
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[scale=0.21]{../src/prepare_data/fg.png}
@@ -331,6 +331,17 @@
 		\end{figure}
 	\end{block}
 
+\end{frame}
+
+\begin{frame}
+	\frametitle{模型尝试}
+	\begin{block}{尝试模型}
+		\begin{itemize}
+			\item 线性回归模型.准确率50\%左右,不够理想.
+			\item 神经网络.相较于线性回归模型，准确率更高，但仍然未达到80\%.
+			\item 决策树.准确率达到90\%.可用于该模型的精确研究.
+		\end{itemize}
+	\end{block}
 \end{frame}
 
 \section{模型尝试}
