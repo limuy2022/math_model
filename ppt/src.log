@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  25 MAY 2024 12:16
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2024.5.7)  25 MAY 2024 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1611,65 +1611,65 @@ File: ../src/prepare_data/tg.png Graphic file (type bmp)
 <../src/prepare_data/tg.png>
 File: ../src/prepare_data/fg.png Graphic file (type bmp)
 <../src/prepare_data/fg.png>
+ [9
+
+]
 File: ../src/prepare_data/rr.png Graphic file (type bmp)
 <../src/prepare_data/rr.png>
 File: ../src/prepare_data/hu.png Graphic file (type bmp)
 <../src/prepare_data/hu.png>
+ [10
 
-Overfull \vbox (146.82709pt too high) detected at line 334
- []
+] [11
 
-[9
-
-] [10
-
-] (./src.toc) [11
-
-] [12
+] (./src.toc)
+[12
 
 ] [13
+
+] [14
 
 ]
 File: ../src/try_match/ols_five.png Graphic file (type bmp)
 <../src/try_match/ols_five.png>
- [14
-
-] [15
+ [15
 
 ] [16
+
+] [17
 
 ]
 File: ../latex/success.png Graphic file (type bmp)
 <../latex/success.png>
- [17
-
-] [18
+ [18
 
 ] [19
 
 ] [20
 
+] [21
+
 ]
 File: ../latex/very_success.png Graphic file (type bmp)
 <../latex/very_success.png>
- [21
+ [22
 
-]
-[22
+] [23
 
-] (./src.toc) [23
-
-] [24
+] (./src.toc)
+[24
 
 ] [25
 
 ] [26
 
-] (./src.toc) [27
+] [27
 
-] [28
+] (./src.toc) [28
 
 ] [29
+
+] [30
 
 ]
 \tf@nav=\write6
@@ -1691,15 +1691,15 @@ L3 programming layer <2022/07/14>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `src.out' has not changed.
-(rerunfilecheck)             Checksum: 5BB7BF77A6F7DC9B12C0EA9268002E9F;1061.
+(rerunfilecheck)             Checksum: 9EFFCD0AF9C2D355F552197FDCDA1412;1061.
  ) 
 Here is how much of TeX's memory you used:
- 38354 strings out of 474878
- 876186 string characters out of 5762517
+ 38356 strings out of 474878
+ 876196 string characters out of 5762517
  1961627 words of memory out of 5000000
- 59706 multiletter control sequences out of 15000+600000
+ 59708 multiletter control sequences out of 15000+600000
  561970 words of font info for 72 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,20n,123p,482b,989s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on src.pdf (29 pages).
+Output written on src.pdf (30 pages).
